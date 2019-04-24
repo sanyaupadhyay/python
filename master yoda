@@ -1,0 +1,4 @@
+#Given a sentence, return a sentence with the words reversed
+def master_yoda(x):
+    x,y,z=x.split()
+    return " ".join([z,y,x])
