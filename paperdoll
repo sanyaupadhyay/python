@@ -1,0 +1,7 @@
+#Given a string, return a string where for every character in the original there are three characters
+def paper_doll(x):
+  y=''
+  for i in range(len(x)):
+    for num in range(3):
+      y+=x[i]
+  return y    
