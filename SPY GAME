@@ -1,0 +1,11 @@
+#Write a function that takes in a list of integers and returns True if it contains 007 in order
+def spy_game(x):
+    l=[]
+    k=[0,0,7]
+    for i in range(len(x)):
+        if x[i]==0 or x[i]==7:
+            l.append(x[i])
+    print(l)
+    if k == l:
+        return True
+    return False
