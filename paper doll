@@ -2,6 +2,5 @@
 def paper_doll(x):
   y=''
   for i in range(len(x)):
-    for num in range(3):
-      y+=x[i]
+      y+=x[i]*3
   return y    
