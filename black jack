@@ -1,0 +1,14 @@
+""" Given three integers between 1 and 11, if their sum is less than or equal to 21, return their sum. 
+If their sum exceeds 21 and there's an eleven, reduce the total sum by 10. Finally, if the sum (even after adjustment) exceeds 21, 
+return 'BUST'"""
+
+def blackjack(x,y,z):
+  summ=x+y+z
+  if summ<=21:
+    return summ
+  elif x==11 or y==11 or z==11:
+    summ-=10
+    if(summ)>21:
+      return 'BUST'
+    return summ
+  return 'BUST'
