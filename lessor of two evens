@@ -1,5 +1,5 @@
 def lesser_of_two_evens(x,y):
-    if x%2==0 and y%2==0:
+    if x%2==0 and y%2==0: # if both x y are even print minimum of the two
         return min(x,y)
     elif x%2==0:
         return x
