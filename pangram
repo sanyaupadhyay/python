@@ -1,0 +1,12 @@
+#Write a Python function to check whether a string is pangram or not.
+#Pangrams are words or sentences containing every letter of the alphabet at least once.
+
+import string
+def ispangram(s):
+    new=""
+    check=list(string.ascii_lowercase)
+    for i in range(len(s)):
+            if s[i].lower() not in new and s[i].isalpha():
+                new+=s[i].lower()
+    return len(new)==len(check)  #len(check)=26
+    
