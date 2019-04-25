@@ -1,0 +1,16 @@
+#Write a Python function that takes a list and returns a new list with unique elements of the first list.
+def unique_list(x):
+  l=[]
+  for i in range(len(x)):
+    for j in range(len(x)):
+      if x[i] not in l:
+        l.append(x[i])
+  return l
+  
+  
+#write a Python function to multiply all the numbers in a list.
+def multiply(x):
+  p=1
+  for i in range(len(x)):
+    p*=x[i]
+  return p
