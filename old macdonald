@@ -1,0 +1,8 @@
+def old_macdonald(x):
+    y=''
+    for i in range(len(x)):
+        if i==0 or i==3:
+            y+=x[i].upper()
+        else:
+            y+=x[i]
+    return y
