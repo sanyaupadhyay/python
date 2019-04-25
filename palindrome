@@ -1,0 +1,9 @@
+#Write a Python function that checks whether a passed in string is palindrome or not
+def palindrome(s):
+  l=[]
+  for i in range(len(s)):
+      if s[i].isalpha():
+          l.append(s[i])
+  k=l[::-1]
+  return k==l
+    
